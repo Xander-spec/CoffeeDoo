@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Воздушный тирамису в кофейне CoffeeDoo. Классический рецепт с маскарпоне и кофе. Нежный итальянский десерт.">
+    <meta name="keywords" content="тирамису, итальянский десерт, тирамису с маскарпоне">
+    <meta property="og:title" content="Тирамису — CoffeeDoo">
+    <meta property="og:description" content="Классический итальянский тирамису. Нежный и воздушный.">
+    <meta property="og:image" content="/image/dessert-menu/image.png">
+    <meta property="og:type" content="website">
+    <title>Тирамису | Итальянский десерт в CoffeeDoo</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <div
+          class="header__logo-box"
+          onclick="location.href='index.html'"
+          aria-label="Перейти на главную страницу"
+          role="link"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter'){location.href='index.html'}"
+        >
+          <img src="image/logo.png" alt="logo" />Coffeedoo
+        </div>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="burger-btn"
+          title="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div
+          class="header__nav-box"
+          role="navigation"
+          aria-label="Основная навигация"
+        >
+          <nav><a href="coffee-menu.html">Кофе</a></nav>
+          <nav><a href="dessert-menu.html">Десерты</a></nav>
+          <nav><a href="index.html#review">Отзывы</a></nav>
+          <nav><a href="contact.html">Контакты</a></nav>
+          <button class="header__btn" onclick="location.href='login.html'">
+            Заказать
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="card-container">
+          <h1>Тирамису</h1>
+          <div class="card-box">
+            <div class="card__img-box">
+              <img src="image/dessert-menu/image.png" alt="coffee" />
+            </div>
+            <div class="card__content-box">
+              <div class="card__content">
+                <p>
+                  Воздушное облако из сливочного сыра маскарпоне, пропитанное
+                  ароматом кофе и нежной сладостью печенья савоярди. Итальянская
+                  классика, шедевр, который тает во рту, оставляя незабываемое
+                  послевкусие.
+                </p>
+                <div class="card-info">
+                  <p>Объем: 200 гр</p>
+                  <p>Цена: 350 руб.</p>
+                </div>
+                <div class="card__btn-box">
+                  <div class="counter">
+                    <button class="decrease">-</button>
+                    <span class="number">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                  <button class="buy-btn">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__nav-box">
+          <div class="footer-logo">
+            <img src="image/logo.png" alt="logo" />
+            <p>Coffeedoo</p>
+          </div>
+          <div class="footer-nav">
+            <nav><a href="coffee-menu.html">Кофе</a></nav>
+            <nav><a href="index.html#review">Отзывы</a></nav>
+            <nav><a href="dessert-menu.html">Десерты</a></nav>
+            <nav><a href="contact.html">Контакты</a></nav>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p>Реквезиты</p>
+          <p>ИП Кириллов Максим Владимирович</p>
+          <p>ИНН 773213546784</p>
+          <p>C077eDo@mail.ru</p>
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="image/vk.png" alt="vk" /></a>
+          <a href="#"><img src="image/inst.png" alt="inst" /></a>
+          <a href="#"><img src="image/tg.png" alt="tg" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script/counter.js"></script>
+    <script src="script/burger.js"></script>
+  </body>
+</html>

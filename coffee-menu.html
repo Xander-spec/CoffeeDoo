@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="robots" content="index, follow">
+    <meta name="description" content="Меню кофе в кофейне CoffeeDoo: капучино, латте, раф, эспрессо, американо и авторские напитки. Свежая обжарка.">
+    <meta name="keywords" content="меню кофе, капучино, латте, эспрессо, американо, раф, кофейня">
+    <meta property="og:title" content="Меню кофе — CoffeeDoo">
+    <meta property="og:description" content="Спешелти кофе, классика и авторские рецепты. Выберите свой идеальный напиток в CoffeeDoo.">
+    <meta property="og:image" content="/image/coffee-menu/image 4.png">
+    <meta property="og:type" content="website">
+    <title>Меню кофе | Кофейня CoffeeDoo</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <div
+          class="header__logo-box"
+          onclick="location.href='index.html'"
+          aria-label="Перейти на главную страницу"
+          role="link"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter'){location.href='index.html'}"
+        >
+          <img src="image/logo.png" alt="logo" />Coffeedoo
+        </div>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="burger-btn"
+          title="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div
+          class="header__nav-box"
+          role="navigation"
+          aria-label="Основная навигация"
+        >
+          <nav><a href="coffee-menu.html">Кофе</a></nav>
+          <nav><a href="dessert-menu.html">Десерты</a></nav>
+          <nav><a href="index.html#review">Отзывы</a></nav>
+          <nav><a href="contact.html">Контакты</a></nav>
+          <button class="header__btn" onclick="location.href='login.html'">
+            Заказать
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="menu-container">
+          <h1>Кофе</h1>
+          <p>
+            Погрузитесь в мир кофейного блаженства! Мы отбираем лучшие зерна и
+            обжариваем их с любовью, чтобы каждая чашка стала источником
+            вдохновения. От классики до авторских рецептов — откройте для себя
+            новые грани кофейного вкуса в нашей уютной атмосфере.
+          </p>
+          <div class="menu-box">
+            <div class="card" onclick="location.href='espresso.html'">
+              <img src="image/coffee-menu/image 2.png" alt="coffee" />
+              <div class="price">
+                <h4>Эспрессо</h4>
+                <p>200 ₽</p>
+              </div>
+            </div>
+            <div class="card" onclick="location.href='cappuccino.html'">
+              <img src="image/coffee-menu/image 3.png" alt="coffee" />
+              <div class="price">
+                <h4>Капучино</h4>
+                <p>350 ₽</p>
+              </div>
+            </div>
+            <div class="card" onclick="location.href='americano.html'">
+              <img src="image/coffee-menu/image 4.png" alt="coffee" />
+              <div class="price">
+                <h4>Американо</h4>
+                <p>300 ₽</p>
+              </div>
+            </div>
+            <div class="card" onclick="location.href='latte.html'">
+              <img src="image/coffee-menu/image 5.png" alt="coffee" />
+              <div class="price">
+                <h4>Латте</h4>
+                <p>300 ₽</p>
+              </div>
+            </div>
+            <div class="card" onclick="location.href='mokko.html'">
+              <img src="image/coffee-menu/image 6.png" alt="coffee" />
+              <div class="price">
+                <h4>Мокко</h4>
+                <p>350 ₽</p>
+              </div>
+            </div>
+            <div class="card" onclick="location.href='ice-latte.html'">
+              <img src="image/coffee-menu/image 8.png" alt="coffee" />
+              <div class="price">
+                <h4>Айс Латте</h4>
+                <p>400 ₽</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__nav-box">
+          <div class="footer-logo">
+            <img src="image/logo.png" alt="logo" />
+            <p>Coffeedoo</p>
+          </div>
+          <div class="footer-nav">
+            <nav><a href="coffee-menu.html">Кофе</a></nav>
+            <nav><a href="index.html#review">Отзывы</a></nav>
+            <nav><a href="dessert-menu.html">Десерты</a></nav>
+            <nav><a href="contact.html">Контакты</a></nav>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p>Реквезиты</p>
+          <p>ИП Кириллов Максим Владимирович</p>
+          <p>ИНН 773213546784</p>
+          <p>C077eDo@mail.ru</p>
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="image/vk.png" alt="vk" /></a>
+          <a href="#"><img src="image/inst.png" alt="inst" /></a>
+          <a href="#"><img src="image/tg.png" alt="tg" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script/burger.js"></script>
+  </body>
+</html>

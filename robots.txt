@@ -1,0 +1,32 @@
+# robots.txt для сайта кофейни CoffeeDoo
+
+# Основные правила для всех поисковых роботов
+User-agent: *
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /account.html
+Disallow: /*?
+
+# Разрешаем индексацию всех основных страниц сайта
+Allow: /index.html
+Allow: /coffee-menu.html
+Allow: /dessert-menu.html
+Allow: /americano.html
+Allow: /cappuccino.html
+Allow: /espresso.html
+Allow: /latte.html
+Allow: /ice-latte.html
+Allow: /mokko.html
+Allow: /brauni.html
+Allow: /cheesecake.html
+Allow: /eclair.html
+Allow: /fon-dan.html
+Allow: /tiramisu.html
+Allow: /contact.html
+
+# Указываем расположение Sitemap
+Sitemap: https://coffeedoo.ru/sitemap.xml
+
+# Задержка для медленных роботов (опционально)
+# Crawl-delay: 2

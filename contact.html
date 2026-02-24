@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Контакты кофейни CoffeeDoo: адрес, телефон, часы работы, как добраться. Ждем вас в гости!">
+    <meta name="keywords" content="контакты кофейни, адрес, телефон, часы работы, как добраться">
+    <meta property="og:title" content="Контакты — кофейня CoffeeDoo">
+    <meta property="og:description" content="Приходите в нашу уютную кофейню. Адрес, карта проезда и режим работы.">
+    <meta property="og:type" content="website">
+    <title>Контакты кофейни CoffeeDoo | Адрес, телефон, часы работы</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <div
+          class="header__logo-box"
+          onclick="location.href='index.html'"
+          aria-label="Перейти на главную страницу"
+          role="link"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter'){location.href='index.html'}"
+        >
+          <img src="image/logo.png" alt="logo" />Coffeedoo
+        </div>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="burger-btn"
+          title="Открыть меню"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div
+          class="header__nav-box"
+          role="navigation"
+          aria-label="Основная навигация"
+        >
+          <nav><a href="coffee-menu.html">Кофе</a></nav>
+          <nav><a href="dessert-menu.html">Десерты</a></nav>
+          <nav><a href="index.html#review">Отзывы</a></nav>
+          <nav><a href="contact.html">Контакты</a></nav>
+          <button class="header__btn" onclick="location.href='login.html'">
+            Заказать
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="contact-container">
+          <h1>Контактная информация</h1>
+          <h4>Адрес</h4>
+          <p>проспект Мира, 40, Чебоксары, Россия</p>
+          <h4>Номер телефона</h4>
+          <p>+7(777)777-77-77</p>
+          <h4>Часы работы</h4>
+          <p>Пн-Вс: 8:00 – 22:00</p>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f7e1d0ecb67044c98bf90299522b8dcfde09b848f8bc5a059b802eeaa9ad851&amp;source=constructor"
+            width="100%"
+            height="380"
+            frameborder="0"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__nav-box">
+          <div class="footer-logo">
+            <img src="image/logo.png" alt="logo" />
+            <p>Coffeedoo</p>
+          </div>
+          <div class="footer-nav">
+            <nav><a href="coffee-menu.html">Кофе</a></nav>
+            <nav><a href="index.html#review">Отзывы</a></nav>
+            <nav><a href="dessert-menu.html">Десерты</a></nav>
+            <nav><a href="contact.html">Контакты</a></nav>
+          </div>
+        </div>
+        <div class="footer__info">
+          <p>Реквезиты</p>
+          <p>ИП Кириллов Максим Владимирович</p>
+          <p>ИНН 773213546784</p>
+          <p>C077eDo@mail.ru</p>
+        </div>
+        <div class="footer__social">
+          <a href="#"><img src="image/vk.png" alt="vk" /></a>
+          <a href="#"><img src="image/inst.png" alt="inst" /></a>
+          <a href="#"><img src="image/tg.png" alt="tg" /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script/burger.js"></script>
+  </body>
+</html>
